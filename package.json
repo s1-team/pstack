@@ -1,0 +1,11 @@
+{
+  "name": "pstack",
+  "version": "0.1.0",
+  "description": "pstack skills mirrored from cursor/plugins.",
+  "license": "MIT",
+  "keywords": ["pi-package", "pstack", "skills"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s1-team/pstack.git"
+  }
+}
