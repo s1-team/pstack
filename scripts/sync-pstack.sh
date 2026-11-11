@@ -41,4 +41,14 @@ rm -rf "$root/skills"
 mv "$root/skills.new" "$root/skills"
 cp -a "$tmp/plugins/pstack/LICENSE" "$root/LICENSE"
 printf '%s\n' "$sha" > "$stamp"
+python3 - "$root/.claude-plugin/plugin.json" "$sha" <<'PY'
+import json, sys
+path, sha = sys.argv[1], sys.argv[2]
+with open(path) as fh:
+    data = json.load(fh)
+data["version"] = sha[:12]
+with open(path, "w") as fh:
+    json.dump(data, fh, indent=2)
+    fh.write("\n")
+PY
 echo "updated ${have:-none} -> $sha"

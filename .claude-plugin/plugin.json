@@ -1,0 +1,12 @@
+{
+  "name": "pstack",
+  "version": "63912a91d52c",
+  "description": "pstack skills mirrored from cursor/plugins. Workflow, review, and planning skills for coding agents.",
+  "author": {
+    "name": "s1-team"
+  },
+  "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
+  "repository": "https://github.com/s1-team/pstack",
+  "license": "MIT",
+  "keywords": ["pstack", "skills", "poteto-mode", "workflow"]
+}
